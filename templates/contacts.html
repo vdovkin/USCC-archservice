@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+
+{% block content %}
+<!-- Page Content -->
+<div class="container contacts">
+
+    <!-- HEADER -->
+    <div class="row align-items-center">
+        <div class="col-sm-12 text-center">
+            <h2>Контакти</h2>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- MAIN BLCOK -->
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h2>Зворотній зв'язок</h2>
+            <form id="contactForm" class="contactForm">
+                <div class="form-element">
+                    <input type="text" name="Name" id="name" placeholder="ПІП" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-element">
+                    <input type="text" name="Email" id="email" placeholder="E-mail" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-element">
+                    <input type="tel" name="Number" id="tel" placeholder="Телефон" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-element">
+                    <select id="category" name="category">
+                        <option value="">Категорія вашої діяльності</option>
+                        <option value="architect">Архітектор</option>
+                        <option value="engineer">Проектувальник</option>
+                        <option value="student">Студент</option>
+                        <option value="other">Інше</option>
+                    </select>
+                    <small>Error message</small>
+                </div>
+                <div class="form-element">
+                    <textarea name="question" id="question" cols="30" rows="10" placeholder="Задати питання"></textarea>
+                    <small>Error message</small>
+                </div>
+                <button class="btn-orange my-4">Відправити</button>
+            </form>
+        </div>
+    </div>
+    <!-- END MAIN BLCOK -->
+</div>
+<!-- END PAGE Content -->
+
+<!-- scripts -->
+{% block scripts %}
+<script src="{% static 'js/contacts.js' %}"></script>
+{% endblock %}
+
+
+{% endblock %}
