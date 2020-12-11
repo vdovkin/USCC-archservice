@@ -1,0 +1,222 @@
+.beamtype {
+  margin-bottom: 20px;
+}
+
+// button
+.btn-beamtype {
+  font-weight: 600;
+  color: $color3;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.btn-beamtype:focus {
+  border: none;
+  outline: none;
+}
+
+.not-active {
+  background-color: $color4;
+}
+
+.not-active:hover {
+  background-color: $color2;
+}
+
+.active {
+  color: white;
+  background-color: $color3;
+}
+
+.beamform {
+  background-color: $color6;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px $color3;
+  padding: 15px;
+  text-align: center;
+  .form-element {
+    position: relative;
+    margin-top: 10px;
+    padding-top: 20px;
+    label {
+      color: $color5;
+      display: block;
+      margin-bottom: 5px;
+    }
+    input,
+    select {
+      border: 2px solid #f0f0f0;
+      border-radius: 4px;
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+    }
+    input:focus,
+    select:focus {
+      outline: 0;
+      border-color: $color5;
+    }
+    small {
+      color: $error_color;
+      padding-top: 3px;
+      display: none;
+    }
+  }
+
+  .form-element.error {
+    small {
+      display: block;
+    }
+  }
+  #grid {
+    padding-top: 10px;
+  }
+}
+
+.inputGroup {
+  font-size: 14px;
+  display: block;
+  // margin: 10px 0;
+  position: relative;
+
+  label {
+    padding: 14px 5px 12px 35px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+    &:before {
+      width: 10px;
+      height: 20px;
+      border-radius: 50%;
+      content: "";
+      background-color: $color2;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale3d(1, 1, 1);
+      transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0;
+      z-index: -1;
+    }
+
+    &:after {
+      width: 24px;
+      height: 24px;
+      content: "";
+      border: 2px solid #d1d7dc;
+      background-color: #fff;
+      background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+      background-repeat: no-repeat;
+      background-position: 1px 2px;
+      border-radius: 50%;
+      z-index: 2;
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      transition: all 200ms ease-in;
+    }
+  }
+
+  input:checked ~ label {
+    // color: $color5;
+
+    &:before {
+      transform: translate(-50%, -50%) scale3d(56, 56, 1);
+      opacity: 1;
+    }
+
+    &:after {
+      background-color: $color3;
+      border-color: $color3;
+    }
+  }
+
+  input {
+    width: 24px;
+    height: 24px;
+    order: 1;
+    z-index: 2;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    visibility: hidden;
+  }
+}
+
+.inputGroup2 {
+  font-size: 14px;
+  display: block;
+  // margin: 10px 0;
+  position: relative;
+
+  label {
+    padding: 12px 30px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    // transition: color 200ms ease-in;
+    // overflow: hidden;
+  }
+}
+
+.loadsection {
+  padding: 5px 15px;
+  background-color: $color4;
+  box-shadow: 2px 2px 5px $color3;
+  border-radius: 20px;
+  p {
+    color: white;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px $color3;
+  }
+}
+
+.results {
+  padding-top: 50px;
+}
+
+.instructions {
+  padding: 10px 10px;
+  border-radius: 20px;
+  background-color: $color4;
+  box-shadow: 2px 2px 5px $color3;
+  font-size: 14px;
+  .note {
+    padding: 5px;
+    font-style: italic;
+  }
+  li {
+    padding-top: 15px;
+  }
+}
+
+.checkbox {
+  text-align: left;
+  color: $color5;
+  font-size: 14px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

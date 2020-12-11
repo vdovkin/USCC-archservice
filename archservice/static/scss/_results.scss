@@ -1,0 +1,41 @@
+.names {
+  font-weight: 800;
+  color: $color3;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+hr {
+  border-top: 4px solid $color3;
+  border-radius: 3px;
+}
+
+.resulttable {
+  text-align: center;
+  table {
+    width: 100%;
+    height: 300px;
+  }
+
+  th,
+  td {
+    border: 2px solid $color3;
+  }
+}
+
+.comunications {
+  text-align: center;
+}
+
+.resutsbtn {
+  margin-bottom: 80px;
+  margin-top: 50px;
+  button {
+    margin: 5px 30px;
+  }
+}
+
+#flaps {
+  width: 80%;
+}

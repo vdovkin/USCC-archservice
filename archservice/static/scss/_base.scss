@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: none;
+  box-sizing: border-box;
+  list-style: none;
+  border-radius: 0;
+  font-family: $font;
+  line-height: 1;
+}
+
+body {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  @media #{$large_device} {
+    font-size: 18px;
+  }
+  @media #{$mobile_device} {
+    font-size: 14px;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.color-header {
+  color: $color1;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sec-header {
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+// button
+.btn-orange {
+  font-weight: 600;
+  color: $color3;
+  background-color: $color2;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  @media #{$large_device} {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+  @media #{$mobile_device} {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+.btn-orange:hover {
+  text-decoration: none;
+  outline: none;
+  color: $color2;
+  background-color: $color3;
+}
+
+.btn-orange:focus {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}

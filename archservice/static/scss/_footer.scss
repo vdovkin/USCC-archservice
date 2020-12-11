@@ -1,0 +1,49 @@
+.footer {
+  background-color: $color4;
+  font-family: $font;
+  font-size: 14px;
+  padding: 40px 0;
+  line-height: 1;
+  @media #{$large_device} {
+    font-size: 16px;
+  }
+  @media #{$mobile_device} {
+    font-size: 12px;
+  }
+
+  .cont {
+    color: $color1;
+    a {
+      color: $color1;
+    }
+    a:hover {
+      text-decoration: none;
+      color: $color2;
+    }
+    p {
+      line-height: 1.2;
+      margin-bottom: 9px;
+    }
+  }
+
+  .footer-links {
+    li {
+      margin-bottom: 15px;
+    }
+    a {
+      color: $color5;
+    }
+    a:hover {
+      text-decoration: none;
+      color: $color2;
+    }
+  }
+}
+
+.text_with_icons svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  position: absolute;
+  left: -21px;
+}
