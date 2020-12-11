@@ -1,24 +1,33 @@
 .navbar {
   background-color: $color1;
+  padding-top: 0px;
+  padding-bottom: 0px;
 
-  font-size: 16px;
+  font-size: 14px;
 
   .navbar-nav {
-    text-transform: uppercase;
     .nav-link {
-      color: #fff;
+      padding: 28px 10px;
+      font-weight: 500;
+      color: $font_color1;
+      text-transform: uppercase;
+      @media #{$monitor_screen} {
+        font-size: 16px;
+        padding: 42px 20px;
+      }
     }
     .nav-link:hover,
     .nav-link:focus {
       color: $color2;
     }
+  }
 
-    .active_page {
-      color: $color2;
+
+  img{
+    max-height: 56px;
+    @media #{$monitor_screen} {
+      max-height: none;
     }
   }
 
-  img {
-    max-height: 60px;
-  }
 }

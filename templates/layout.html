@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.png' %}" />
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/5de3e67cfc.js" crossorigin="anonymous"></script>
@@ -26,7 +26,7 @@
 
 <body>
     <!-- header section -->
-    <header></header>
+    <header class="header">{% include 'partials/_navbar.html'%}</header>
 
     <!-- Main content -->
     {% block content %} {% endblock %}

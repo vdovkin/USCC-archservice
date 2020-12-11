@@ -2,16 +2,25 @@
 
 $font: "Roboto", sans-serif;
 
+// navbarlinks
+$font_color1: #dcddde;
+
+// navbar
 $color1: #536279;
+
 $color2: #f89c49;
 $color3: #294063;
 $color4: #e0e9ee;
 $color5: #3f5968;
 $color6: #dfdfdf;
+
 $error_color: #e74c3c;
 $success_color: #2ecc71;
 
-$large_device: "(min-width: 1025px)";
+$monitor_screen: "(min-width: 1691px)";
+
+// $laptop_screen: "(min-width: 1451px)";
+
 $mid_device: "(min-width: 992px) and (max-width: 1200px)";
 $tablet_device: "(min-width: 768px) and (max-width: 991px)";
 $large_mobile: "only screen and (min-width: 480px) and (max-width: 767px)";

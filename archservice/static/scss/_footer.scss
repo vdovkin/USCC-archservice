@@ -4,9 +4,6 @@
   font-size: 14px;
   padding: 40px 0;
   line-height: 1;
-  @media #{$large_device} {
-    font-size: 16px;
-  }
   @media #{$mobile_device} {
     font-size: 12px;
   }
