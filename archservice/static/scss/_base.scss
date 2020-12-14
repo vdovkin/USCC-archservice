@@ -80,3 +80,13 @@ header{
   }
   box-sizing: border-box;
 }
+
+.error-msg{
+  color: $error_color;
+  background-color: $color4;
+}
+
+.success-msg{
+  color: $success_color;
+  background-color: $color4;
+}

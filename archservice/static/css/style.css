@@ -96,6 +96,16 @@ header {
   }
 }
 
+.error-msg {
+  color: #e74c3c;
+  background-color: #e0e9ee;
+}
+
+.success-msg {
+  color: #2ecc71;
+  background-color: #e0e9ee;
+}
+
 .navbar {
   background-color: #536279;
   padding-top: 0px;

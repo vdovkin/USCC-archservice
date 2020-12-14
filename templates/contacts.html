@@ -15,22 +15,28 @@
     </div>
     <!-- END HEADER -->
 
+
     <!-- MAIN BLCOK -->
     <div class="row align-items-center">
         <div class="col-md-6">
+            <!-- Alerts -->
+            {% include 'partials/_alerts.html' %}
             <h2>Зворотній зв'язок</h2>
             <form id="contactForm" class="contactForm" action="{% url 'contacts' %}" method="POST">
                 {% csrf_token %}
                 <div class="form-element">
-                    <input type="text" name="name" id="name" placeholder="ПІП" />
+                    <input type="text" name="name" id="name" placeholder="ПІП" 
+                    {% if name %} value="{{name}}" {% endif %} />
                     <small>Error message</small>
                 </div>
                 <div class="form-element">
-                    <input type="text" name="email" id="email" placeholder="E-mail" />
+                    <input type="text" name="email" id="email" placeholder="E-mail" 
+                    {% if email %} value="{{email}}" {% endif %} />
                     <small>Error message</small>
                 </div>
                 <div class="form-element">
-                    <input type="tel" name="phone" id="tel" placeholder="Телефон" />
+                    <input type="tel" name="phone" id="tel" placeholder="Телефон"
+                    {% if phone %} value="{{phone}}" {% endif %} />
                     <small>Error message</small>
                 </div>
                 <div class="form-element">
@@ -44,7 +50,7 @@
                     <small>Error message</small>
                 </div>
                 <div class="form-element">
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Задати питання"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Задати питання">{% if message %}{{message}}{% endif %}</textarea>
                     <small>Error message</small>
                 </div>
                 <button class="btn-orange my-4">Відправити</button>
