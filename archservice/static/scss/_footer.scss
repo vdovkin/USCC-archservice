@@ -1,11 +1,11 @@
 .footer {
   background-color: $color4;
-  font-family: $font;
   font-size: 14px;
   padding: 40px 0;
   line-height: 1;
   @media #{$mobile_device} {
     font-size: 12px;
+    padding-left: 40px;
   }
 
   .cont {
@@ -43,4 +43,58 @@
   margin-right: 10px;
   position: absolute;
   left: -21px;
+  p{
+    margin-left: 20px;
+    text-align: left;
+  }
+  
+}
+
+.footer-lang-view{
+  height: 40px;
+  a{
+    width: 30px;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  a.selected-lan{
+    color: $color2;
+    margin-right: 10px;
+    vertical-align: bottom;
+  }
+  ul{
+    display: flex;
+    flex-flow: row;
+    a{
+      padding: 3px 5px;
+      color: $color1;
+
+    }
+    a:hover{
+      color: $color2;
+      text-decoration: none;
+    }
+  }
+}
+
+.icons{
+  a{
+    padding: 0 5px;
+    text-align: center;
+    color: $color3;
+
+  }
+  a:hover{
+    color: $color1;
+    text-decoration: none;
+  }
+  a:focus{
+    outline: none;
+  }
+  i:focus{
+    outline: none;
+  }
 }

@@ -1,0 +1,47 @@
+.header_section{
+    background: linear-gradient( 180deg, rgba(143, 162, 184, 0.7) 0%, rgba(130, 143, 166, 0.7)100%), url('/static/img/background1.jpg') no-repeat center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    h1{
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    margin-bottom: 0;
+}
+
+.section{
+    padding: 60px 10px;
+    @media #{$mobile_device} {
+        padding: 30px 30px;
+      }
+}
+
+.text-content{
+  color: $color1;
+  ul{
+      padding-left: 20px;
+  }
+  li{
+      list-style: disc;
+      margin-bottom: 7px;
+  }
+
+}
+
+.blue-section{
+    background-color: $color4;
+    margin-bottom: 0;
+}
+
+
+.title{
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.left-img{
+    padding-bottom: 20px;
+}

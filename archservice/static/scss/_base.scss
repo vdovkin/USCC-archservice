@@ -17,7 +17,11 @@ body {
   @media #{$mobile_device} {
     font-size: 14px;
   }
+  @media #{$monitor_screen} {
+    font-size: 18px;
+  }
 }
+
 
 ul {
   list-style: none;
@@ -35,13 +39,6 @@ ul {
   font-weight: bold;
 }
 
-header{
-  height: 70px;
-  @media #{$monitor_screen} {
-    height: 100px;
-  }
-}
-
 // button
 .btn-orange {
   font-weight: 600;
@@ -57,6 +54,8 @@ header{
     font-size: 14px;
     padding: 10px 20px;
   }
+  display: block;
+  width: max-content;
 }
 
 .btn-orange:hover {
@@ -72,4 +71,12 @@ header{
 
 input[type="checkbox"] {
   visibility: hidden;
+}
+
+header{
+  height: 70px;
+  @media #{$monitor_screen} {
+    height: 100px;
+  }
+  box-sizing: border-box;
 }

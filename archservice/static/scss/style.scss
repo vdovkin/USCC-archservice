@@ -4,11 +4,5 @@
 @import "navbar";
 @import "footer";
 
-// index
-@import "index";
-
-// results
-@import "results";
-
-// contacts
-@import "contacts";
+@import 'contacts';
+@import "about";
