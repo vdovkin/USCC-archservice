@@ -72,8 +72,6 @@ function checkEmail(input) {
       showError(input, "E-mail не дійсний");
       return false;
     }
-    showSuccess(input);
-    return true;
   }
 
 
