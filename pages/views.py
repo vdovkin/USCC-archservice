@@ -18,10 +18,10 @@ def contacts(request):
 
         name = request.POST["name"]
         email = request.POST["email"]
-        message = request.POST["message"]
+        question = request.POST["question"]
         phone = request.POST["phone"]
 
-        if not is_emtpy_fields(name, email, message):
+        if not is_emtpy_fields(name, email, question):
             # get profession if selected
             profession = get_profession(request)
 
@@ -30,7 +30,7 @@ def contacts(request):
                 email=email,
                 phone=phone,
                 profession=profession,
-                message=message,
+                question=question,
             )
 
             contact.save()
@@ -46,7 +46,7 @@ def contacts(request):
             request.session['name']  = name
             request.session['email']  = email
             request.session['phone']  = phone
-            request.session['message']  = message
+            request.session['question']  = question
 
             messages.error(
                 request, "Не вдалося відправити питання. Ви не заповнили обов'язкові поля."

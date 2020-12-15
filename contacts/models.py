@@ -9,8 +9,8 @@ class Contact(models.Model):
     email = models.CharField(max_length=100)
     phone = models.CharField(max_length=100, blank=True)
     profession = models.CharField(max_length=100, blank=True)
-    message = models.TextField()
+    question = models.TextField()
     contact_date = models.DateTimeField(default=datetime.now, blank=True)
 
     def __str__(self):
-        return self.name + self.message[:30]
+        return self.name + self.question[:30]
