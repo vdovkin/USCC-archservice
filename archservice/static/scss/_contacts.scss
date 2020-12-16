@@ -136,3 +136,40 @@
 
 }
 
+.btn-box{
+  margin: 25px 10px;
+  text-align: center;
+}
+
+.btn-contact-info {
+  font-weight: 600;
+  background-color: $color1;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+    font-size: 16px;
+    color: $font_color1;
+    @media #{$mobile_device} {
+      font-size: 14px;
+      padding: 10px 20px;
+    
+  }
+  
+  display: inline-block;
+  width: 100%;
+}
+
+.btn-contact-info:hover, 
+.btn-contact-info:active {
+  text-decoration: none;
+  outline: none;
+  color: $color2;
+  background-color: $color3;
+}
+
+.btn-contact-info:focus {
+  outline: none;
+  box-shadow: none;
+}

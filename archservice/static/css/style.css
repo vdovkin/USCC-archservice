@@ -418,6 +418,46 @@ header {
   margin-right: 10px;
 }
 
+.btn-box {
+  margin: 25px 10px;
+  text-align: center;
+}
+
+.btn-contact-info {
+  font-weight: 600;
+  background-color: #536279;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #dcddde;
+  display: inline-block;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .btn-contact-info {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+.btn-contact-info:hover,
+.btn-contact-info:active {
+  text-decoration: none;
+  outline: none;
+  color: #f89c49;
+  background-color: #294063;
+}
+
+.btn-contact-info:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .about_header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(123, 142, 164, 0.8)), to(rgba(110, 123, 146, 0.8))), url("/static/img/background_about.jpg") no-repeat center;
   background: linear-gradient(180deg, rgba(123, 142, 164, 0.8) 0%, rgba(110, 123, 146, 0.8) 100%), url("/static/img/background_about.jpg") no-repeat center;
