@@ -64,3 +64,6 @@ def contacts(request):
             del request.session[key]
 
     return render(request, "contacts.html", context)
+
+def results(request):
+    return render(request, "results.html")

@@ -1,60 +1,40 @@
-.beamtype {
-  margin-bottom: 20px;
+.formtitle{
+  background-color: $color1;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
 }
 
-// button
-.btn-beamtype {
-  font-weight: 600;
-  color: $color3;
-  text-transform: uppercase;
-  border-radius: 0;
-  border: none;
-  outline: none;
-  padding: 5px 15px;
-  cursor: pointer;
-}
-
-.btn-beamtype:focus {
-  border: none;
-  outline: none;
-}
-
-.not-active {
-  background-color: $color4;
-}
-
-.not-active:hover {
-  background-color: $color2;
-}
-
-.active {
-  color: white;
-  background-color: $color3;
+.textform{
+  margin-top: 20px;
 }
 
 .beamform {
-  background-color: $color6;
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px $color3;
-  padding: 15px;
+  background-color: $color4;
+  padding: 15px 15px 15px 15px;
   text-align: center;
+
   .form-element {
     position: relative;
-    margin-top: 10px;
     padding-top: 20px;
+    margin-top: 10px;
     label {
-      color: $color5;
+      color: $color1;
+      font-weight: bold;
       display: block;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
     input,
     select {
-      border: 2px solid #f0f0f0;
-      border-radius: 4px;
+      border: none;
       display: block;
       width: 100%;
       padding: 10px;
       font-size: 14px;
+    }
+    option{
+      color: $color3;
     }
     input:focus,
     select:focus {
@@ -73,16 +53,23 @@
       display: block;
     }
   }
-  #grid {
-    padding-top: 10px;
+
+  button{
+    display: inline-block;
+    margin: 30px 0 15px 0;
   }
+
+  #grid_block{
+    padding-top: 0;
+  }
+
+  
 }
 
-.inputGroup {
+.input_group {
   font-size: 14px;
   display: block;
-  // margin: 10px 0;
-  position: relative;
+  // position: relative;
 
   label {
     padding: 14px 5px 12px 35px;
@@ -129,6 +116,7 @@
     }
   }
 
+
   input:checked ~ label {
     // color: $color5;
 
@@ -157,25 +145,6 @@
   }
 }
 
-.inputGroup2 {
-  font-size: 14px;
-  display: block;
-  // margin: 10px 0;
-  position: relative;
-
-  label {
-    padding: 12px 30px;
-    width: 100%;
-    display: block;
-    text-align: left;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-    // transition: color 200ms ease-in;
-    // overflow: hidden;
-  }
-}
-
 .loadsection {
   padding: 5px 15px;
   background-color: $color4;
@@ -188,19 +157,17 @@
   }
 }
 
-.results {
-  padding-top: 50px;
-}
-
 .instructions {
-  padding: 10px 10px;
-  border-radius: 20px;
-  background-color: $color4;
-  box-shadow: 2px 2px 5px $color3;
-  font-size: 14px;
+  padding: 5px 0 15px 15px;
+  line-height: 1.2;
+  color: $color3;
+  h4{
+    margin-top: 10px;
+  }
   .note {
-    padding: 5px;
+    padding: 10px 5px 10px 0;
     font-style: italic;
+    line-height: 1.4;
   }
   li {
     padding-top: 15px;
@@ -219,4 +186,13 @@
 
 .show {
   display: block;
+}
+
+.index_header{
+  background: linear-gradient( 180deg, rgba(123, 142, 164, 0.8) 0%, rgba(110, 123, 146, 0.8)100%), url('/static/img/background_index.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.main_menu{
+  margin-top: 40px;
 }

@@ -90,3 +90,15 @@ header{
   color: $success_color;
   background-color: $color4;
 }
+
+.header_section{
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 2px $color1;
+  h1{
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+  }
+  margin-bottom: 0;
+}
