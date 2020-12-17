@@ -27,36 +27,36 @@
                         <div class="form-element" id="grid_block">
                             <label for="grid">Сітка колон (L x B), м</label>
                             <select id="grid" name="grid">
-                                <option value="5,5x15">5,5x15</option>
-                                <option value="6x6">6х6</option>
-                                <option value="6x9">6х9</option>
-                                <option value="6х12">6х12</option>
-                                <option value="6х18">6х18</option>
-                                <option value="8,4х8,4" selected>8,4х8,4</option>
-                                <option value="8,4х16,8">8,4х16,8</option>
-                                <option value="9х9">9х9</option>
+                                <option value="5.5 15">5,5x15</option>
+                                <option value="6 6">6х6</option>
+                                <option value="6 9">6х9</option>
+                                <option value="6 12">6х12</option>
+                                <option value="6 18">6х18</option>
+                                <option value="8.4 8.4" selected>8,4х8,4</option>
+                                <option value="8.4 16.8">8,4х16,8</option>
+                                <option value="9 9">9х9</option>
                             </select>
                         </div>
                         <div>
                             <div class="input_group">
-                                <input id="customgrid" type="checkbox" onclick="showGridSelection()" />
+                                <input id="customgrid" type="checkbox" onclick="showGridSelection()" name="customgrid" />
                                 <label for="customgrid">Задати свою сітку колон</label>
                             </div>
                         </div>
 
                         <div class="form-element hide" id="lenghtblock">
                             <label for="lenght">Довжина (L), м</label>
-                            <input type="number" id="lenght" value="9" />
+                            <input type="number" id="lenght" value="9" name='lenght' />
                             <small>Error message</small>
                         </div>
                         <div class="form-element hide" id="stepblock">
                             <label for="step">Ширина (В), м</label>
-                            <input type="number" id="step" value="9" />
+                            <input type="number" id="step" value="9" name='step' />
                             <small>Error message</small>
                         </div>
                         <div class="form-element">
                             <label for="load1">Навантаження за типом будівлі</label>
-                            <select id="load1">
+                            <select id="load1" name='load1'>
                                 <option value="200">
                                     Адміністративні, офіси (200 кг/м<sup>2</sup>)
                                 </option>
@@ -75,7 +75,7 @@
                         </div>
                         <div class="form-element">
                             <label for="load2">Тип чистової підлоги</label>
-                            <select id="load2">
+                            <select id="load2" name='load2'>
                                 <option value="90">
                                     Керамогранітна плитка поверх цементно-піщаної стяжки (90
                                     кг/м<sup>2)</sup>
