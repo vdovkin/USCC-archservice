@@ -3,5 +3,119 @@
 {% load static %}
 
 {% block content %}
-<h2>RESULTS</h2>
+<!-- Main content -->
+<main role="main">
+    <!-- HEADER -->
+    <div class="jumbotron jumbotron-fluid header_section about_header">
+        <div class="container">
+            <h1>Результати підбору</h1>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- MAIN BLCOK -->
+    <div class="container section">
+        <div class="row">
+            <div class="col-md-12 text-content">
+                <h3 class="title">Параметри балок</h3>
+            </div>
+            <div class="col-md-6">
+                <img class='img-fluid' src="{% static 'img/beams.png' %}" alt="beams">
+            </div>
+            <div class="col-md-6 text-content">
+                <div class="result-block right-block">
+                    <div class="result-element">
+                        <h3>Висота головної балки</h3>
+                        <h4>H<sub>г.б</sub> &nbsp; &mdash; &nbsp; 600 мм</h4>
+                    </div>
+
+                    <div class="result-element">
+                        <h3>Висота другорядних балок </h3>
+                        <h4>H<sub>д.б</sub> &nbsp; &mdash; &nbsp; 300 мм </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid blue-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-content">
+                    <h3 class="title">Параметри плити перекриття</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-content">
+                    <div class="result-block">
+                        <div class="result-element">
+                            <h3>Висота плити перериття</h3>
+                            <h4>h<sub>пл</sub> &nbsp; &mdash; &nbsp; 140мм</h4>
+                        </div>
+
+                        <div class="result-element">
+                            <h3>Висота профільованого настилу</h3>
+                            <h4>h<sub>пл</sub> &nbsp; &mdash; &nbsp; 60 мм </h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class='img-fluid' src="{% static 'img/slab.png' %}" alt="slab">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container section">
+        <div class="row">
+            <div class="col-md-12 text-content">
+                <h3 class="title">Загальний габарит перекриття &nbsp; &mdash; &nbsp; 800 <span>мм</span></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img class='img-fluid' src="{% static 'img/floor_draw.png' %}" alt="floor_draw.png">
+            </div>
+            <div class="col-md-6">
+                <img class='img-fluid' src="{% static 'img/floor2.png' %}" alt="floor2.png">
+            </div>
+
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid blue-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-content">
+                    <h3 class="title">Габарити перфорацій</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-content">
+                    <div class="result-block">
+                        <div class="result-element">
+                            <h3>Максимальний габарит перфорацій для головної балки</h3>
+                            <h4>300 х 200 мм</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 left-img">
+                    <img class='img-fluid' src="{% static 'img/flaps.png' %}" alt="flaps">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="users-options">
+        <div class="btn-wrapper">
+            <a href="{% url 'index' %}" class='btn-orange-big'>Змінити параметри</a>
+        </div>
+        <div class="btn-wrapper">
+            <a href="{% url 'contacts' %}" class="btn-orange-big">Задати питання</a>
+        </div>
+        <div class="btn-wrapper">
+            <a href="https://uscc.ua/" class='btn-orange-big'>Перейти на сайт УЦСБ</a>
+        </div>
+    </div>
+    <!-- END MAIN BLCOK -->
+</main>
 {% endblock %}

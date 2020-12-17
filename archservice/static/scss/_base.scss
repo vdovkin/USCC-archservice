@@ -102,3 +102,33 @@ header{
   }
   margin-bottom: 0;
 }
+
+// button big
+.btn-orange-big {
+  font-weight: 600;
+  color: $color3;
+  background-color: $color2;
+  text-transform: uppercase;
+  border-radius: 0;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  @media #{$mobile_device} {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  display: block;
+  width: max-content;
+}
+
+.btn-orange-big:hover {
+  text-decoration: none;
+  outline: none;
+  color: $color2;
+  background-color: $color3;
+}
+
+.btn-orange-big:focus {
+  outline: none;
+}

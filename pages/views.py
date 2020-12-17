@@ -66,4 +66,7 @@ def contacts(request):
     return render(request, "contacts.html", context)
 
 def results(request):
+    if request.method == "POST":
+        return redirect('results')
+
     return render(request, "results.html")
