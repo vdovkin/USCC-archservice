@@ -744,7 +744,7 @@ header {
   margin-top: 40px;
 }
 
-.about_header {
+.results_header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(123, 142, 164, 0.8)), to(rgba(110, 123, 146, 0.8))), url("/static/img/background_results.jpg") no-repeat center;
   background: linear-gradient(180deg, rgba(123, 142, 164, 0.8) 0%, rgba(110, 123, 146, 0.8) 100%), url("/static/img/background_results.jpg") no-repeat center;
   background-size: cover;
