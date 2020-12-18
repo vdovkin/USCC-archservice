@@ -18,3 +18,6 @@ db.sqlite3-journal
 # static version
 index.html
 /static-site
+
+#/material
+/materials
