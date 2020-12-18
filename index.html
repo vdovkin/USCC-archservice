@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/favicon.png" />
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/5de3e67cfc.js" crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
     <!-- Custom css -->
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
 <nav class="navbar navbar-expand-md fixed-top navbar-dark">
     <div class="container">
             <a class='navbar-brand' href="/">
-                <img src="/static/img/logo.png" alt="logo" />
+                <img src="static/img/logo.png" alt="logo" />
             </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
@@ -39,9 +39,9 @@
         <div class="collapse navbar-collapse" id="navbarToggle">
             <!-- Navbar Right Side -->
             <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link" href="/index.html">Головна</a>
-                <a class="nav-item nav-link" href="/static-site/about.html">Про сервіс</a>
-                <a class="nav-item nav-link" href="/static-site/contacts.html">Контакти</a>
+                <a class="nav-item nav-link" href="index.html">Головна</a>
+                <a class="nav-item nav-link" href="static-site/about.html">Про сервіс</a>
+                <a class="nav-item nav-link" href="static-site/contacts.html">Контакти</a>
                 <a class="nav-item nav-link" href="https://uscc.ua/">Сайт УЦСБ</a>
             </div>
         </div>
@@ -62,14 +62,14 @@
         <div class="container main_menu">
             <div class="row">
                 <div class="col-md-6 col-lg-4 my-auto">
-                    <img id="MainImage" class="img-fluid" src="/static/img/shema.jpg" alt="" />
+                    <img id="MainImage" class="img-fluid" src="static/img/shema.jpg" alt="" />
                 </div>
 
                 <div class="col-md-6 col-lg-4 textform">
                     <div class="formtitle">
                         <h3>Основні параметри</h3>
                     </div>
-                    <form class="beamform" id="mainForm" action="/static-site/results.html" onsubmit="return validateForm()">
+                    <form class="beamform" id="mainForm" action="static-site/results.html" onsubmit="return validateForm()">
                         <input type="hidden" name="csrfmiddlewaretoken" value="w2WHj46YTC9u0o0RAQufJh4Puy2O7JQb0qkRjvo3LXjHiN8DiXwsAoPYLhrMwQQs">
                         <div class="form-element" id="grid_block">
                             <label for="grid">Сітка колон (L x B), м</label>
@@ -227,9 +227,9 @@
             <div class="col-md-2 footer-links d-none d-md-block">
 
                 <ul>
-                    <li><a href="/index.html">Головна</a></li>
-                    <li><a href="/static-site/about.html">Про сервіс</a></li>
-                    <li><a href="/static-site/contacts.html">Контакти</a></li>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="static-site/about.html">Про сервіс</a></li>
+                    <li><a href="static-site/contacts.html">Контакти</a></li>
                 </ul>
             </div>
             <!-- Grid column -->
@@ -270,7 +270,7 @@
 
     <!-- JS custom scripts -->
     
-<script src="/static/js/index.js"></script>
+<script src="static/js/index.js"></script>
 
 
     <!-- JS scripts -->
@@ -283,7 +283,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="/static/js/main.js"></script>
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>
