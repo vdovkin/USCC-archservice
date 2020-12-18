@@ -15,6 +15,7 @@ db.sqlite3-journal
 /media
 /static
 
-# static version
-index.html
-/static-site
+/archservice
+/contacts
+/elements
+/pages
