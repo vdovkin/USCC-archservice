@@ -493,8 +493,8 @@ header {
 }
 
 .about_header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(123, 142, 164, 0.8)), to(rgba(110, 123, 146, 0.8))), url("/static/img/background_about.jpg") no-repeat center;
-  background: linear-gradient(180deg, rgba(123, 142, 164, 0.8) 0%, rgba(110, 123, 146, 0.8) 100%), url("/static/img/background_about.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(123, 142, 164, 0.8)), to(rgba(110, 123, 146, 0.8))), url("https://vdovkin.github.io/archservice/static/img/background_about.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(123, 142, 164, 0.8) 0%, rgba(110, 123, 146, 0.8) 100%), url("https://vdovkin.github.io/archservice/static/img/background_about.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -735,8 +735,8 @@ header {
 }
 
 .index_header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(123, 142, 164, 0.8)), to(rgba(110, 123, 146, 0.8))), url("/static/img/background_index.jpg") no-repeat center;
-  background: linear-gradient(180deg, rgba(123, 142, 164, 0.8) 0%, rgba(110, 123, 146, 0.8) 100%), url("/static/img/background_index.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(123, 142, 164, 0.8)), to(rgba(110, 123, 146, 0.8))), url("https://vdovkin.github.io/archservice/static/img/background_index.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(123, 142, 164, 0.8) 0%, rgba(110, 123, 146, 0.8) 100%), url("https://vdovkin.github.io/archservice/static/img/background_index.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -745,8 +745,8 @@ header {
 }
 
 .results_header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(123, 142, 164, 0.8)), to(rgba(110, 123, 146, 0.8))), url("/static/img/background_results.jpg") no-repeat center;
-  background: linear-gradient(180deg, rgba(123, 142, 164, 0.8) 0%, rgba(110, 123, 146, 0.8) 100%), url("/static/img/background_results.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(123, 142, 164, 0.8)), to(rgba(110, 123, 146, 0.8))), url("https://vdovkin.github.io/archservice/static/img/background_results.jpg") no-repeat center;
+  background: linear-gradient(180deg, rgba(123, 142, 164, 0.8) 0%, rgba(110, 123, 146, 0.8) 100%), url("https://vdovkin.github.io/archservice/static/img/background_results.jpg") no-repeat center;
   background-size: cover;
 }
 
